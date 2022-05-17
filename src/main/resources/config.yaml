@@ -1,0 +1,38 @@
+browser:
+  browserName: chrome
+  headlessBrowser: false
+  webElementTimeOut: 15
+
+environment:
+  test:
+    envName: test
+    baseUrl: https://jsonplaceholder.typicode.com
+    apiUsers: /users
+    username: Ilon
+    firstName: Marian
+    lastName: Kowalski
+    email: mariankowalski@tes.com
+    age: 65
+    profession: 2
+    continent: europe
+    seleniumCommand1: navigation-commands
+    seleniumCommand2: wait-commands
+    expectedMsg: Form send with success
+    path: src/main/resources/user.json
+    active: false
+  test2:
+    envName: test2
+    baseUrl: https://jsonplaceholder.typicode.com
+    apiUsers: /users
+    username: Ilon
+    firstName: Jan
+    lastName: Nowak
+    email: jannowak@tes.com
+    age: 44
+    profession: 1
+    continent: asia
+    seleniumCommand1: switch-commands
+    seleniumCommand2: wait-commands
+    expectedMsg: Form send with success
+    path: src/main/resources/user.json
+    active: true
